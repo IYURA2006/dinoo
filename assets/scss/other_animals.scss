@@ -1,0 +1,10 @@
+@import "mixin.scss";
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400;500;600;800&display=swap");
+@include common;
+
+.main {
+    max-width: 1400px;
+    margin: 50px auto;
+    flex: 1 1 auto;
+}

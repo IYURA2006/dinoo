@@ -1,0 +1,71 @@
+@import "mixin.scss";
+
+.nav {
+    background-color: $nav_color;
+    &__content {
+      @include content;
+      &--logo {
+        height: 80px;
+        width: 80px;
+        background-image: url(/assets/images/common_img/logo.png);
+        background-size: 80px;
+  
+        &:hover {
+          background-image: url(/assets/images/common_img/logo-active.png);
+        }
+      }
+      &--links,
+      &--links__li,
+      &--links__text {
+        color: $color_text;
+        font-size: 19px;
+        font-weight: 400;
+        &:active {
+          color: $color_text_additional;
+        }
+        &--active{
+          color: $color_text_additional;
+        }
+      }
+      &--links {
+        text-decoration: none;
+        &__li {
+          display: inline;
+          margin-right: 30px;
+          text-decoration: none;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size 0.3s;
+          &:hover {
+            background-size: 100% 2px;
+          }
+        }
+      }
+      &--language {
+        &__ua{
+          height: 80px;
+          width: 80px;
+          background: url(/assets/images/common_img/ua.png);
+          background-size: 80px;
+          &--active{
+            background: url(/assets/images/common_img/ua-active.jpg);
+          }
+        }
+        &__ru{
+          background: url(/assets/images/common_img/ru.png);
+          &--active{
+            background: url(/assets/images/common_img/ru-active.jpg);
+          }
+        }
+        &__en{
+          background: url(/assets/images/common_img/eng.png);
+          &--active{
+            background: url(/assets/images/common_img/en-active.jpg);
+          }
+        }
+      }
+    }
+  }
+  

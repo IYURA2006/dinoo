@@ -1,0 +1,139 @@
+@import "mixin.scss";
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400;500;600;800&display=swap");
+
+@include common;
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  flex: 1 1 auto;
+}
+
+
+.learn_dinosaurs {
+  margin-top: 45px;
+  margin-bottom: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__text {
+    max-width: 508px;
+    text-align: left;
+    &--header {
+      @include header;
+    }
+    &--paragraph {
+      margin-top: 5px;
+      max-width: 458px;
+    }
+    &--buttons {
+      margin-top: 25px;
+    }
+  }
+  &__first_button {
+    @include button;
+    box-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: $nav_color;
+    &:hover {
+      background-color: #06911d;
+      color: #0fb863;
+      box-shadow: 0px 15px 20px #0fb863;
+      color: $var7;
+      transform: translateY(-7px);
+    }
+    &:active {
+      top: 3px;
+      transition: box-shadow 0.5s ease 0s;
+      box-shadow: 0 2px 0 #08eb13;
+    }
+  }
+  &__second_buton {
+    @include button;
+    text-decoration: underline;
+    margin-left: 30px;
+
+    &:hover {
+      color: #ebebeb;
+    }
+  }
+}
+.button--symbol::before {
+  display: inline-block;
+  content: "\25B6";
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.pros {
+  text-align: center;
+  &__header {
+    @include header;
+    margin-bottom: 60px;
+  }
+  &__information {
+    display: flex;
+    justify-content: center;
+  }
+  &__article {
+    text-align: left;
+    max-width: 240px;
+    margin-right: 46px;
+    margin-bottom: 50px;
+    &--header {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+    }
+    &--paragraph {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &__image {
+    max-width: 50px;
+    max-height: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(100, 100, 100));
+    filter: drop-shadow(5px 5px 5px rgb(95, 95, 95));
+  }
+}
+
+.history {
+  text-align: center;
+  margin-bottom: 100px;
+  &__header {
+    @include header;
+  }
+  &__content {
+    @include content;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+    &--paragraph{
+      max-width: 550px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-text;
+    }
+    &--img{
+      max-width: 500px;
+      max-height: 500px;
+    }
+    &--strong{
+      font-size: 20px;
+      color: $color_text_additional;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+

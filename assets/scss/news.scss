@@ -1,0 +1,107 @@
+@import "mixin.scss";
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400;500;600;800&display=swap");
+@include common;
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    &__content{
+        max-width: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+}
+.box {
+    width: 370px;
+    height: 310px;
+    position: relative;
+    border: 0;
+    transition: box-shadow 0.3s;
+    margin-top: 45px;
+    background-color: $bg_dinosaurs;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+    &__img {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      height:180px;
+      width: 350px;
+    }
+    &__header {
+      font-size: 30px;
+      line-height: 25px;
+      color: black;
+      font-weight: 700;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+    }
+    &__date {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      top: 50px;
+      padding: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &_number {
+        font-size: 32px;
+        line-height: 25px;
+        color: white;
+        font-weight: 700;
+      }
+      &_month {
+        font-size: 21px;
+        line-height: 25px;
+        color: white;
+      }
+    }
+    &__title {
+      max-width: 307px;
+      min-height: 79px;
+      font-size: 20px;
+      line-height: 25px;
+      color: black;
+      font-weight: 700;
+      text-align: left;
+      position: absolute;
+      font-family: "Comfortaa";
+      top: 210px;
+      left: 20px;
+    }
+    &__paragraph{
+        max-width: 307px;
+        min-height: 79px;
+        font-size: 14px;
+        line-height: 20px;
+        color: black;
+        text-align: left;
+        position: absolute;
+        font-family: "Montserrat";
+        top: 240px;
+        left: 20px;
+    }
+    &__publishing {
+      font-size: 13px;
+      line-height: 25px;
+      color: black;
+      font-weight: 600;
+      position: absolute;
+      top: 275px;
+      right: 20px;
+    }
+    &__date {
+      position: absolute;
+    }
+  }

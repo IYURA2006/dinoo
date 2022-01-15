@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/common_img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/mixin.css" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/nav.css" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="./dist/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+
+    <title>Стародавні тварини</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav__content">
+          <a href="index.html" class="nav__content--logo"></a>
+          <div class="nav__content--links">
+            <ul class="nav__content--links__ul">
+              <li class="nav__content--links__li">
+                <a
+                  href="layouts/dino_page/dino_page.html"
+                  class="nav__content--links__text"
+                  >Динозаври</a
+                >
+              </li>
+              <li class="nav__content--links__li">
+                <a href="layouts/other_animals/other_animals.html" class="nav__content--links__text"
+                  >Інші стародавні тварини</a
+                >
+              </li>
+              <li class="nav__content--links__li">
+                <a href="layouts/news_page/news.html" class="nav__content--links__text">Новини</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__content--language">
+            <a
+              href="index.html"
+              class="nav__content--language__en"
+              id="en"
+            ></a>
+            <a
+              href="index.html"
+              class="nav__content--language__ua--active"
+              id="ua"
+            ></a>
+            <a
+              href="index.html"
+              class="nav__content--language__ru"
+              id="ru"
+            ></a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main content">
+        <div class="learn_dinosaurs">
+          <div class="learn_dinosaurs__text">
+            <h1 class="learn_dinosaurs__text--header">
+              Досліджуймо динозаврів разом!
+            </h1>
+            <p class="learn_dinosaurs__text--paragraph">
+              Тут ви знайдете все про динозаврів. Читати матеріал буде цікавим
+              як любителям, так і фахівцям; як дорослим, і дітям.
+            </p>
+            <div class="learn_dinosaurs__text--buttons">
+              <a
+                href="layouts/dino_page.html"
+                class="learn_dinosaurs__first_button"
+                >Дізнатись більше</a
+              >
+              <a href="https://www.youtube.com/watch?v=-A4SF8jCr3o" class="button--symbol learn_dinosaurs__second_buton"
+                >Переглянути відео</a
+              >
+            </div>
+          </div>
+
+          <div class="learn_dinosaurs__image">
+            <img
+              src="assets/images/main_page/main_page_dinosaur_without_fone2.png"
+              class="second_image"
+              alt="photo of dinosaur"
+            />
+          </div>
+        </div>
+
+        <div class="pros">
+          <h2 class="pros__header">Переваги нашого сайту</h2>
+          <div class="pros__information">
+            <div class="pros__article">
+              <img
+                src="assets/images/main_page/icon_click.svg"
+                class="pros__image"
+                alt="click"
+              />
+              <h3 class="pros__article--header">Перший сайт</h3>
+              <p class="pros__article--paragraph">
+                для того, щоб детально дізнатись про стародавніх тварин
+              </p>
+            </div>
+
+            <div class="pros__article">
+              <img
+                src="assets/images/main_page/dinosaur_icon.png"
+                alt="dinosaur"
+                class="pros__image"
+              />
+              <h3 class="pros__article--header">Динозаври</h3>
+              <p class="pros__article--paragraph">
+                Інформація про зовнішній вигляд і фізичний дані про цих тварин
+              </p>
+            </div>
+            <div class="pros__article">
+              <img
+                src="assets/images/main_page/lapka_icon.png"
+                alt="hand"
+                class="pros__image"
+              />
+              <h3 class="pros__article--header">
+                Дізнавайся про інші стародавні тварини
+              </h3>
+              <p class="pros__article--paragraph">
+                Інформація про зовнішній вигляд і фізичний дані про цих тварин
+              </p>
+            </div>
+            <div class="pros__article">
+              <img
+                src="assets/images/main_page/news_icon.png"
+                alt="news"
+                class="pros__image"
+              />
+              <h3 class="pros__article--header">Новини</h3>
+              <p class="pros__article--paragraph">
+                Останні новини про пошук нових видів динозаврів
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="history">
+          <h2 class="history__header">Історія динозаврів</h2>
+          <div class="history__content">
+            <p class="history__content--paragraph">
+              <strong class="history__content--strong"
+                >Звідки взялися динозаври?
+              </strong>
+              У всьому світі час від часу знаходять скам’янілі кістки тварин,
+              яких ми звикли називати динозаврами. Багато знахідок складаються
+              лише з певних фрагментів, але іноді виявляються і майже цілі
+              скелети. Виходячи з відмітних характеристик, таких, як структура
+              черепа, кінцівок і т. д., учені змогли описати безліч різновидів
+              динозаврів. Але виникають проблеми у визначенні динозавра як
+              такого.
+            </p>
+            <img
+              src="assets/images/main_page/history-first.png"
+              class="history__content--img"
+              alt="dinosaur skelet"
+            />
+            <img
+              src="assets/images/main_page/history-second.png"
+              class="history__content--img"
+              alt="founder of dinosaurs"
+            />
+            <p class="history__content--paragraph">
+              <strong class="history__content--strong"
+                >Хто відкрив динозаврів?</strong
+              >
+              Світські книги свідчать, що перше відкриття тварин, згодом
+              названих динозаврами, відбулося в 1677 році, коли лікар Роберт
+              Плот знайшов кістки на стільки величезні, що належати вони могли,
+              як вважалося тоді, або величезному слонові, або людині-велетневі.
+              Сер Річард Оуен У 1822 році Мері Ментел прогулювалася англійською
+              сільською місцевістю, коли знайшла на дорозі камінь, що яскраво
+              виблискував на сонці. Вона показала його чоловікові – збирачеві
+              скам’янілостей, який виявив, що цей камінь містить зуб дуже схожий
+              на зуби сучасних рептилій, але був набагато більшим. Він дійшов
+              висновку, що зуб належав величезній вимерлій рептилії, яка мала
+              зуби, як в ігуани. У 1825 році він придумав назву для володаря
+              зуба – “ігуанодон” (тобто “зуб ігуани”). Саме лікар Ментел став
+              першим популяризатором ідеї про “епоху рептилій”. Саме слово
+              “динозавр” з’явилося в 1841 році. Сер Річард Оуен, знаменитий
+              англійський учений-анатом, розглядаючи кістки ігуанодона і
+              мегалозавра, дійшов висновку, що вони є унікальною, ще не
+              систематизованою групою рептилій. Він і винайшов термін “динозавр”
+              – від грецької “жахливий ящір”.
+            </p>
+            <img
+              src="assets/images/main_page/history-third.png"
+              class="history__content--img"
+              alt="skelet of dinosaurs"
+            />
+            <p class="history__content--paragraph">
+              <strong class="history__content--strong"
+                >Як виглядали динозаври?
+              </strong>
+              Ученим рідко доводиться мати справи з неушкодженими останками
+              динозаврів. Навіть якщо вдається виявити цілий скелет, усе рівно
+              він складає менше 40% загальної маси тіла, і на його основі не так
+              легко реконструювати зовнішній вигляд тварини. Так, кістки нічого
+              не розкажуть нам про колір шкіри динозавра, хоча серед скам’янілих
+              останків знаходилися і такі, що дозволяли визначати структуру
+              шкіри. Сучасні рептилії відрізняються великим кольоровим
+              різноманіттям; можливо, це саме відбувалося і з динозаврами – вони
+              теж могли різко відрізнятися один від одного кольором і структурою
+              шкіри. Реконструюючи вигляд динозаврів на основі останків, учені
+              роблять найрізноманітніші припущення і при цьому рідко приходять
+              до спільної думки.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      
+      <footer class="footer">
+        <div class="footer__content">
+          <a href="#" class="footer__content--logo"></a>
+          <div class="footer__content--block">
+            <ul class="footer__content--list">
+              <li>
+                <a href="layouts/dino_page/dino_page.html" class="footer__content--list__link">Динозаври</a>
+              </li>
+              <li>
+                <a href="layouts/other_animals/other_animals.html" class="footer__content--list__link"
+                  >Стародавні тварини</a
+                >
+              </li>
+              <li>
+                <a href=/layouts/news_page/news.html" class="footer__content--list__link">Новини</a>
+              </li>
+            </ul>
+
+            <ul class="footer__content--list">
+              <li>
+                <a href="#" class="footer__content--list__link">Disclaimer</a>
+              </li>
+              <li>
+                <a href="#" class="footer__content--list__link">Financing</a>
+              </li>
+              <li>
+                <a href="#" class="footer__content--list__link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__content--list__link"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+
+            <div class="footer__content--social-buttons">
+              <a
+                href="https://www.facebook.com/volodymyr.viatrovych"
+                class="social-buttons__button social-button social-button--facebook"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://github.com/IYURA2006"
+                class="social-buttons__button social-button social-button--github"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/zelenskiy_official/?hl=uk"
+                class="social-buttons__button social-button social-button--instagram"
+                aria-label="SnapChat"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="footer__content--info">
+              © 201-2022 DINOSAURS.org.ua<br /><small
+                >При використанні матеріалів сайту активне посилання на сайт
+                обов'язкова</small
+              >
+            </div>
+          </div>
+
+          <form class="footer__content--responce">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="DINOSAURS" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="yurchyk2906@gmail.com"
+            />
+            <input type="hidden" name="form_subject" value="footer form" />
+            <!-- END Hidden Required Fields -->
+
+            <div class="footer__content--responce__form-inner">
+              <h3 class="footer__content--responce__form-inner--header">
+                Повідомте про помилки
+              </h3>
+              <input
+                name="E-mail"
+                value=""
+                class="footer__content--responce__form-inner--input"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                name="Message"
+                class="footer__content--responce__form-inner--textarea"
+                placeholder="Повідомлення..."
+                rows="3"
+                required
+                minlength="10"
+              ></textarea>
+              <button
+                class="footer__content--responce__form-inner--button"
+                type="submit"
+                value="Надіслати"
+              ><i class="fas fa-arrow-alt-circle-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+  </body>
+</html>

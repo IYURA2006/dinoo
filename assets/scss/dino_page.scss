@@ -1,0 +1,78 @@
+@import "mixin.scss";
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400;500;600;800&display=swap");
+@include common;
+
+.main {
+  max-width: 1400px;
+  margin: 50px auto;
+  flex: 1 1 auto;
+  &__box {
+    @include content;
+    background-color:$bg_dinosaurs;
+    border-radius: 10px;
+    padding: 15px 25px;
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-height: 340px;
+      &__header {
+        @include header;
+        margin-bottom: 10px;
+        color: rgb(165, 165, 165);
+      }
+      &__paragraph {
+        max-width: 530px;
+        max-height: 354px;
+        font-size: 15px;
+        color: $color_text;
+        margin: 0 0 60px 0;
+      }
+      &__buttons {
+        &--first_button {
+          bottom: 25px;
+          @include button;
+          box-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.5);
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          outline: none;
+          background-color: $nav_color;
+          &:hover {
+            background-color: #06911d;
+            color: #0fb863;
+            box-shadow: 0px 15px 20px #0fb863;
+            color: $var7;
+            transform: translateY(-7px);
+          }
+          &:active {
+            top: 3px;
+            transition: box-shadow 0.5s ease 0s;
+            box-shadow: 0 2px 0 #08eb13;
+          }
+        }
+        &--second_button {
+          text-decoration: underline;
+          margin-left: 30px;
+          color: rgb(165, 165, 165);
+
+          &:hover {
+            color: #8d8d8d;
+          }
+        }
+        &--symbol::before {
+          display: inline-block;
+          content: "\25B6";
+          padding-right: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+    &--img {
+      max-width: 386px;
+    }
+  }
+}
